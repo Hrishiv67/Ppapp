@@ -1,0 +1,8 @@
+{
+  "source": "hand-set defaults; see gate.ts",
+  "features": ["logDecay", "noisiness", "harmonicity", "offBand", "contrastDb"],
+  "mean": [3.22, 0, 0.6, 0, 20],
+  "scale": [0.5, 0.1, 0.2, 0.3, 8],
+  "weights": [-1.5, -3.0, -1.0, -1.0, 1.0],
+  "bias": 1
+}

@@ -1,0 +1,83 @@
+{
+  "quiet": {
+    "precision": 1,
+    "recall": 0.998,
+    "f1": 0.999,
+    "rallyCountError": 0,
+    "hitsPerRallyError": 0.024,
+    "activeMinutesError": 0.002,
+    "steadyWindowError": null
+  },
+  "quiet-16k": {
+    "precision": 0.998,
+    "recall": 0.996,
+    "f1": 0.997,
+    "rallyCountError": 0,
+    "hitsPerRallyError": 0.026,
+    "activeMinutesError": 0.001,
+    "steadyWindowError": null
+  },
+  "talk": {
+    "precision": 0.994,
+    "recall": 0.913,
+    "f1": 0.952,
+    "rallyCountError": 0,
+    "hitsPerRallyError": 0.574,
+    "activeMinutesError": 0.125,
+    "steadyWindowError": null
+  },
+  "music": {
+    "precision": 0.984,
+    "recall": 0.896,
+    "f1": 0.938,
+    "rallyCountError": 2.333,
+    "hitsPerRallyError": 2.435,
+    "activeMinutesError": 0.15,
+    "steadyWindowError": null
+  },
+  "claps": {
+    "precision": 0.959,
+    "recall": 0.995,
+    "f1": 0.976,
+    "rallyCountError": 0.333,
+    "hitsPerRallyError": 0.421,
+    "activeMinutesError": 0.073,
+    "steadyWindowError": null
+  },
+  "neighbor": {
+    "precision": 0.996,
+    "recall": 0.988,
+    "f1": 0.992,
+    "rallyCountError": 0,
+    "hitsPerRallyError": 0.073,
+    "activeMinutesError": 0.013,
+    "steadyWindowError": null
+  },
+  "reverb": {
+    "precision": 0.991,
+    "recall": 0.933,
+    "f1": 0.961,
+    "rallyCountError": 0,
+    "hitsPerRallyError": 0.832,
+    "activeMinutesError": 0.046,
+    "steadyWindowError": null
+  },
+  "mixed": {
+    "precision": 0.955,
+    "recall": 0.874,
+    "f1": 0.913,
+    "rallyCountError": 1,
+    "hitsPerRallyError": 1.689,
+    "activeMinutesError": 0.143,
+    "steadyWindowError": null
+  },
+  "fatigue": {
+    "precision": 0.996,
+    "recall": 0.99,
+    "f1": 0.993,
+    "rallyCountError": 0.5,
+    "hitsPerRallyError": 0.16,
+    "activeMinutesError": 0.079,
+    "steadyWindowError": 0.8
+  }
+}

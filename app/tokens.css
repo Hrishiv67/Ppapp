@@ -1,0 +1,76 @@
+/*
+ * RallyBeat design tokens. Values come from the Figma variables
+ * ("Color · Light", "Color · Dark", "Space"); change them there first.
+ *
+ * One rule governs color: the chrome is neutral warm grey. Ball orange only
+ * marks live rally data, green only means "steady". If a color is not
+ * encoding data or state, it is a neutral.
+ *
+ * Contrast ratios are against --bg unless noted.
+ */
+
+:root {
+  --bg: #f7f5f0;
+  --surface: #eeebe4;
+  --surface-2: #e5e1d8;
+  --line: #ddd8ce;
+
+  --ink: #18160f; /* 16.6:1; 13.9:1 on surface-2 */
+  --ink-muted: #4e4a42; /* 8.1:1; 7.4:1 on surface */
+  --ink-faint: #625d54; /* 6.0:1; ≥5.0:1 on every surface. Captions only. */
+
+  --ball: #e8620f; /* 3.1:1, graphics only. Never small text on light. */
+  --ball-text: #b4470c; /* 5.0:1, small orange text on --bg only */
+  --steady: #17704a; /* 5.6:1 */
+  --steady-tint: #dcebe2;
+
+  --inverse-bg: #18160f;
+  --inverse-ink: #f7f5f0;
+
+  --radius-control: 6px;
+  --radius-card: 2px;
+
+  --tap: 48px;
+  --button-h: 76px;
+  --gutter: 24px;
+}
+
+/* The court: Live is always dark, and dark mode reuses it. Tuned for
+   contrast on its own rather than inverting the light palette. */
+.court,
+:root[data-theme="dark"] {
+  --bg: #0d1a15;
+  --surface: #15261f;
+  --surface-2: #1d3229;
+  --line: #2a4237;
+
+  --ink: #f2efe7; /* 15.5:1 */
+  --ink-muted: #b3bdb6; /* 9.3:1 */
+  --ink-faint: #8e9a93; /* 6.1:1 */
+
+  --ball: #ff7a2e; /* 6.9:1 */
+  --ball-text: #ff7a2e;
+  --steady: #5bd195; /* 9.4:1 */
+  --steady-tint: #173a2b;
+
+  --inverse-bg: #f2efe7;
+  --inverse-ink: #0d1a15;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0d1a15;
+    --surface: #15261f;
+    --surface-2: #1d3229;
+    --line: #2a4237;
+    --ink: #f2efe7;
+    --ink-muted: #b3bdb6;
+    --ink-faint: #8e9a93;
+    --ball: #ff7a2e;
+    --ball-text: #ff7a2e;
+    --steady: #5bd195;
+    --steady-tint: #173a2b;
+    --inverse-bg: #f2efe7;
+    --inverse-ink: #0d1a15;
+  }
+}

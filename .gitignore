@@ -8,3 +8,4 @@ playwright-report/
 next-env.d.ts
 .env*
 fixtures/*.wav
+benchmark.json
