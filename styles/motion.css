@@ -76,3 +76,7 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* The weekly ring draws itself once, from zero to today's share. */
+@keyframes rb-ring { from { stroke-dasharray: 0 var(--ring-len); } }
+.ring-fill { animation: rb-ring 0.9s var(--ease-out) both; }

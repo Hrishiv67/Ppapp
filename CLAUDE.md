@@ -38,7 +38,7 @@ Banned. Each one is grounds to reject a diff:
 
 - Purple/blue/neon gradients, gradient buttons, gradient text, background blobs.
 - Glow shadows (`box-shadow: 0 0 Npx` in a color). Glassmorphism, backdrop blur panels.
-- Inter, Plus Jakarta Sans, Geist, or any font other than Atkinson Hyperlegible Next.
+- Inter, Plus Jakarta Sans, Geist, or any font other than Instrument Sans.
 - Three-column icon-plus-paragraph feature grids. Bento layouts.
 - Floating dashboard mockups, grid-pattern or dotted hero backgrounds.
 - Emoji anywhere in the UI, and icons sitting inside rounded tinted boxes.
@@ -52,8 +52,13 @@ Required:
 - Tokens live in `app/tokens.css` with the contrast ratio noted next to each text
   color. Body text ≥ 7:1, secondary text ≥ 4.5:1, on every surface it sits on.
 - 4 px spacing scale. No arbitrary values (`mt-[13px]`).
-- Atkinson Hyperlegible Next for everything. Data in tabular figures
-  (`font-variant-numeric: tabular-nums`). Big stats 72–96 px.
+- Instrument Sans for everything (variable: weight 400–700, width 75–100).
+  Big numbers use the condensed width (`font-stretch: 80%`) at 600, with
+  tabular figures (`font-variant-numeric: tabular-nums`). Big stats 72–96 px.
+- Secondary text is `--ink-muted`, which is dark on purpose. `--ink-faint` is
+  for axis ticks and timestamps only, never for a sentence.
+- One headline sentence per screen. If a line restates a number already on
+  screen, delete it.
 - Icons are inline SVG drawn on a 24 px grid, 1.75 px stroke, round caps.
 - Tap targets ≥ 48 px. Layout survives 200% text. Dark mode is designed, not inverted.
 - Motion comes from `styles/motion.css` only, and every animation has a

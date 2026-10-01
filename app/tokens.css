@@ -16,8 +16,8 @@
   --line: #ddd8ce;
 
   --ink: #18160f; /* 16.6:1; 13.9:1 on surface-2 */
-  --ink-muted: #4e4a42; /* 8.1:1; 7.4:1 on surface */
-  --ink-faint: #625d54; /* 6.0:1; ≥5.0:1 on every surface. Captions only. */
+  --ink-muted: #34302a; /* 12.0:1; 10.0:1 on surface-2. Secondary text stays dark: older eyes, real rooms. */
+  --ink-faint: #625d54; /* 6.0:1. Axis ticks and timestamps only, never sentences. */
 
   --ball: #e8620f; /* 3.1:1, graphics only. Never small text on light. */
   --ball-text: #b4470c; /* 5.0:1, small orange text on --bg only */
@@ -39,38 +39,38 @@
    contrast on its own rather than inverting the light palette. */
 .court,
 :root[data-theme="dark"] {
-  --bg: #0d1a15;
-  --surface: #15261f;
-  --surface-2: #1d3229;
-  --line: #2a4237;
+  --bg: #0f241c;
+  --surface: #163027;
+  --surface-2: #1c3a2f;
+  --line: #2b4a3d;
 
-  --ink: #f2efe7; /* 15.5:1 */
-  --ink-muted: #b3bdb6; /* 9.3:1 */
-  --ink-faint: #8e9a93; /* 6.1:1 */
+  --ink: #f2efe7; /* 14.2:1 */
+  --ink-muted: #c5cec8; /* 10.1:1 */
+  --ink-faint: #9aa69f; /* 6.5:1 */
 
-  --ball: #ff7a2e; /* 6.9:1 */
+  --ball: #ff7a2e; /* 6.3:1 */
   --ball-text: #ff7a2e;
-  --steady: #5bd195; /* 9.4:1 */
+  --steady: #5bd195; /* 8.5:1 */
   --steady-tint: #173a2b;
 
   --inverse-bg: #f2efe7;
-  --inverse-ink: #0d1a15;
+  --inverse-ink: #0f241c;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0d1a15;
-    --surface: #15261f;
-    --surface-2: #1d3229;
-    --line: #2a4237;
+    --bg: #0f241c;
+    --surface: #163027;
+    --surface-2: #1c3a2f;
+    --line: #2b4a3d;
     --ink: #f2efe7;
-    --ink-muted: #b3bdb6;
-    --ink-faint: #8e9a93;
+    --ink-muted: #c5cec8;
+    --ink-faint: #9aa69f;
     --ball: #ff7a2e;
     --ball-text: #ff7a2e;
     --steady: #5bd195;
     --steady-tint: #173a2b;
     --inverse-bg: #f2efe7;
-    --inverse-ink: #0d1a15;
+    --inverse-ink: #0f241c;
   }
 }
